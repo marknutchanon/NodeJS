@@ -1,0 +1,15 @@
+<head> </head>
+<body>
+    <h1>Hello, <%= username %>!</h1>
+
+    <h2>Customer List:</h2>
+    <ul>
+        <% customers.forEach(function(i) { %>
+        <li><%= i %></li>
+        <% }); %> 
+        
+        <% customers.map((i)=> { %>
+        <li><%= i %></li>
+        <% }) %>
+    </ul>
+</body>
